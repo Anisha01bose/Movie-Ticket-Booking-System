@@ -1,0 +1,86 @@
+body
+{
+    background-color: #080710;
+}
+.background .shape{
+    z-index: -1;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 50%;
+}
+.shape:first-child{
+    background: linear-gradient(
+        #1845ad,
+        #23a2f6
+    );
+    right: 24%;
+    top: 6%;
+}
+.shape:last-child{
+    background: linear-gradient(
+        to right,
+        #ff512f,
+        #f09819
+    );
+    left: 16%;
+    bottom: 35%;
+}
+.img #logo
+{
+    width:50px;
+    height: 50px;
+    top:10px;
+    left:10px;
+}
+.container {
+    
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    margin: 0 auto;
+    height: 400px;
+    max-width: 1000px;
+    padding: 20px;
+    text-align: center;
+}
+
+.city-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.container .city-buttons button {
+    box-shadow: 0 5px 10px rgba(255,255,255,0.15);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    text-shadow:2px,2px,#000000;
+    cursor: pointer;
+    font-size: 50px;
+    margin: 10px;
+    padding: 15px 30px;
+    transition: all 0.3s ease;
+}
+.container .city-buttons button:nth-child(4),
+.container .city-buttons button:nth-child(5)
+{
+      background: radial-gradient(#5d85c2, #71b7e6, #5d85c2);
+}
+.container .city-buttons button:nth-child(1),
+.container .city-buttons button:nth-child(2),
+.container .city-buttons button:nth-child(3)
+{
+    background: radial-gradient(#f09819,#f09819, #ff512f);
+}
+
+
+button:hover {
+    background-color: #333;
+    color: #fff;
+}
+h1{
+    color:white;
+}
